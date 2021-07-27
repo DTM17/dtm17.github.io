@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="page-title">TM470 Results Page</title>
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <!-- Bootstrap Compiled CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons for PECS cards -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js" integrity="sha512-5vwN8yor2fFT9pgPS9p9R7AszYaNn0LkQElTXIsZFCL7ucT8zDCAqlQXDdaqgA1mZP47hdvztBMsIoFxq/FyyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+
+  <body>
+    <!-- Main Taskbar Code -->
+    <section id="mainTaskbar">
+      <!-- Task bar bar container -->
+      <div class="container-fluid maintask-container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1 class="text-center">How are you feeling?</h1>
+          </div>
+          <!--Configuration box-->
+          <div class="col-md-1 config-box">
+            <ul class>
+              <li class="config-item config-font">
+                Alter Font<i
+                  class="bi bi-fonts"
+                  role="img"
+                  aria-label="Fonts"
+                ></i>
+              </li>
+              <li class="config-item config-help">
+                I need help<i
+                  class="bi bi-question"
+                  role="img"
+                  aria-label="Question Mark"
+                ></i>
+              </li>
+              <li class="config-item config-delete">
+                Delete data
+                <i class="bi bi-x" role="img" aria-label="Delete"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-1 config-box">
+            <ul class>
+              <li class="config-item config-bright">
+                Bright <i class="bi bi-brightness-high"></i>
+              </li>
+              <li class="config-item config-calm">
+                Calm <i class="bi bi-moon" role="img" aria-label="Moon"></i>
+              </li>
+              <li class="config-item config-finish">
+                <a href="results.html">Finished</a>
+                <i class="bi bi-flag" role="img" aria-label="Finish Flag"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PECS Card row-->
+        <div class="row pecs-row">
+          <!-- PECS Card columns. Setting role as img so screen readers don't skip them.-->
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-laughing pecs-icon"
+              role="img"
+              aria-label="I feel excited"
+            ></i>
+            <p><i class="bi bi-volume-down vol-excited"></i> I feel excited</p>
+          </div>
+
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-smile pecs-icon"
+              role="img"
+              aria-label="I feel happy"
+            ></i>
+            <p><i class="bi bi-volume-down vol-happy"> </i>I feel happy</p>
+          </div>
+
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-neutral pecs-icon"
+              role="img"
+              aria-label="I feel bored"
+            ></i>
+            <p><i class="bi bi-volume-down vol-bored"> </i>I feel bored</p>
+          </div>
+
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-frown pecs-icon"
+              role="img"
+              aria-label="I feel sad"
+            ></i>
+            <p><i class="bi bi-volume-down vol-sad"> </i>I feel sad</p>
+          </div>
+
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-angry pecs-icon"
+              role="img"
+              aria-label="I feel angry"
+            ></i>
+            <p><i class="bi bi-volume-down vol-angry"> </i>I feel angry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-md canvasDiv">
+      <div class="row">
+        <div class="col-6">
+<canvas id="myChart" width="400" height="400" aria-label="Results Pie Chart">
+  
+</canvas>
+</div>
+<div class="col-6">
+  <!--Table to be generated in results.html. Caption states the purpose of the table for users of assistive technology.-->
+  <table class="results-table">
+    <caption>A table containing the results of the PECS card choices and associated pages, from newest to oldest.</caption>
+    <tr>
+      <thead>The web page and associated PECS card choices.</thead>
+    </tr>
+    <tbody class="table-body">
+
+    </tbody>
+
+  </table>
+</div>
+</div>
+</div>
+
+    <!-- Bootstrap Compiled JS, loaded near the bottom so all HTML elements it might change are loaded first. -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ChartJS CDN Scripts. Probably don't need to load these anywhere but results page. -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"
+      integrity="sha512-yadYcDSJyQExcKhjKSQOkBKy2BLDoW6WnnGXCAkCoRlpHGpYuVuBqGObf3g/TdB86sSbss1AOP4YlGSb6EKQPg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Bespoke JavaScript Scripts -->
+    <script src="Scripts\results.js"></script>
+  </body>
+</html>

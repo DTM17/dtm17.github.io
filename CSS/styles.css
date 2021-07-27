@@ -1,0 +1,327 @@
+/* Taskbar */
+
+.maintask-container{
+    background-color: #E6F0F2;
+font-family: 'Noto Sans', sans-serif, 'Arial';
+ /*   font:*/
+}
+
+.toggled-large-font{
+    font-size: 2.5rem;
+}
+
+.brighten-taskbar{
+    background-color: #E6F0F2;
+}
+
+.calm-taskbar{
+    background-color: #C5D7DB;
+
+}
+.maintask-container{
+    margin-right: 10;
+}
+.config-box{
+    background-color: #C5D7DB;
+    font-size: 0.97rem;
+}
+
+.config-item:hover{
+    text-decoration: underline;
+    cursor: grab;
+}
+
+a:link{
+    text-decoration: none;
+    cursor: grab;
+
+}
+
+.pecs-icon{
+font-size: 6rem;
+cursor: grab;
+}
+
+.pecs-icon:hover{
+    filter: brightness(-500%);
+}
+
+.bi-volume-down{
+    font-size: 1.5rem;
+}
+.bi-volume-down:hover{
+    cursor: grab;
+}
+
+.toast{
+    z-index: 1;
+}
+
+table, th, td {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  /* Dummy web page CSS data */
+  input{
+    width: 3rem;
+}
+  
+  /* index.html */
+#indexPageMain{
+    background-color: #E6F0F2;
+}
+.math-easy{
+background-color: #9EFFD8
+}
+.math-medium{
+background-color: #E6B943
+}
+.math-hard{
+background-color: #FA5353
+}
+
+/* secondPage.html */
+
+#spelling-section{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    background-color: #B1CBFD;
+    color:grey;
+}
+
+.bi-spellcheck{
+    font-size: 6rem;
+}
+
+.spellcheck-img-col{
+    transform: rotate(30deg); 
+}
+.spellcheck-img-tick{
+    transform: rotate(10deg);
+    font-size: 4rem;
+}
+
+/* thirdpage.html */
+.history-row{
+background-color: #FFF1BA;
+font-family:'Courier New', Courier, monospace;
+}
+.history-cycle{
+size: 30%;
+}
+.horse-bus{
+    height: 30rem;
+    width: 50rem;
+}
+
+/* fourthpage.html */
+
+.wildlife-facts-row{
+    background-color: #5EBD76;
+}
+.wildlife-info-col{
+  background-color:   #8A694D;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+
+}
+.scotland-flag{
+    height: 20rem;
+    width: 25rem;
+    margin-left: 0px;
+margin-top: 30px;
+}
+.pine-marten-close{
+    height: 20rem;
+    width: 25rem;
+    margin-top: 30px;
+}
+
+.pine-marten-footer{
+    height: 40%;
+    width: 90%;
+}
+.bi-tree-fill{
+    font-size: 30rem;
+    color: #8A694D;
+}
+
+/* fifthpage.html */
+
+.staying-safe-body{
+    background-color: #FFD0E6
+}
+.staying-safe-row{
+    font-family:fantasy;
+    color:  #22252E
+
+}
+.staying-safe-info{
+    background-color: #FBFFFA;
+    margin-left: 80px;
+
+}
+
+.dt-heading{
+    text-decoration: underline;
+    font-size: 2.4rem;
+    color: #22252E;
+}
+
+.dl-dd{
+    font-size: 1.5rem;
+    color: #79878E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bi-laptop{
+    font-size: 4rem;
+}
+
+/* sixthpage.html */
+
+#wordsearch-section{
+    background-color: teal;
+    color: whitesmoke;
+}
+
+.wordsearch-header{
+    color: #ffeb3b;
+}
+
+.input-box-wordsearch{
+    margin-left: 16%;
+    margin-top: 3%;
+    color: lightgrey;
+}
+.wordsearch-input{
+    width: 25%;
+}
+
+/* seventhpage.html */
+
+.missing-word-body{
+    background-color: #A3D1FA;
+}
+.missing-word-input{
+    width: 13%;
+}
+.typing-col{
+    margin-top: 2%;
+    margin-left: 15%;
+    background-color: lightsteelblue;
+    color: #191924;
+}
+.wordsearch-subheading{
+    margin-bottom: 1%;;
+    color: floralwhite;
+
+}
+.missing-word-img-col{
+    margin-left: 14%;
+
+}
+.missing-word-image{
+    height: 20%;
+    width: 40%;
+    margin-top: 7%;
+    transform: rotate(-20deg);
+}
+.rotate-40{
+    transform: rotate(40deg);
+}
+
+/* eigthpage.html */
+
+.essay-col{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:lightslategrey;
+    background-color:lightskyblue;
+    padding-bottom: 20%;
+}
+.essay-subheading{
+    font-size: 2rem;
+}
+.summer-holiday-essay-input{
+    margin-left: 2%;
+    margin-right: 2%;
+
+    
+}
+.summer-holiday-beach-img{
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 50%;
+    height: 350px;
+    width: 1000px;
+
+}
+.cloud-col{
+    background-color:lightskyblue;
+}
+.sun-col{
+    background-color:lightskyblue;
+}
+.the-sun-img{
+    transform: rotate(15deg);
+}
+.cartoon-beach{
+    margin-left: 2%;
+    width: 100%;
+    height: 10%;
+}
+
+
+/* ninthpage.html */
+
+.drag-drop-body{
+    background-color: #D1E3ED;
+}
+.drag-drop-heading{
+    margin-bottom: 1%;
+    color:#405E6E
+}
+.drag-box {
+    border: 3px solid #666;
+    background-color: #ddd;
+    border-radius: .5em;
+    padding: 10px;
+
+    width: 10%;
+  }
+
+
+.drag-num{
+      font-size: 2rem;
+      cursor:grab;
+      text-align: center;
+      border: 3px solid  #A4B2BA;
+      border-radius:.5rem;
+      color:#405E6E;
+  }
+  #drag-div {
+      margin-left: 15%;
+    width: 70%;
+    height: 4.5rem;
+    padding: 10px;
+    border-radius: .5rem;
+    border: 3px solid #A4B2BA;
+  }
+
+  /* tenthpage.html */
+ 
+  #drawCanvas{
+      position: relative;
+      border: 2px solid black;
+      width: 100%;
+      height: 85%;
+ 
+  }
+
+
+
+  .five-percent-space{
+height: 5%;
+  }
+ 

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="page-title">Type in the missing word</title>
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <!-- Bootstrap Compiled CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons for PECS cards -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="missing-word-body">
+    <!-- Main Taskbar Code -->
+    <section id="mainTaskbar">
+      <!-- Task bar bar container -->
+      <div class="container-fluid maintask-container">
+        <div class="row">
+          <div class="col-md-10">
+            <h1 class="text-center">How are you feeling?</h1>
+          </div>
+          <!--Configuration box-->
+          <div class="col-md-1 config-box">
+            <ul class>
+              <li class="config-item config-font">
+                Alter Font<i
+                  class="bi bi-fonts"
+                  role="img"
+                  aria-label="Fonts"
+                ></i>
+              </li>
+              <li class="config-item config-help">
+                I need help<i
+                  class="bi bi-question"
+                  role="img"
+                  aria-label="Question Mark"
+                ></i>
+              </li>
+              <li class="config-item config-delete">
+                Delete data
+                <i class="bi bi-x" role="img" aria-label="Delete"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-1 config-box">
+            <ul class>
+              <li class="config-item config-bright">
+                Bright <i class="bi bi-brightness-high"></i>
+              </li>
+              <li class="config-item config-calm">
+                Calm <i class="bi bi-moon" role="img" aria-label="Moon"></i>
+              </li>
+              <li class="config-item config-finish">
+                <a href="results.html">Finished</a>
+                <i class="bi bi-flag" role="img" aria-label="Finish Flag"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PECS Card row-->
+        <div class="row pecs-row">
+          <!-- PECS Card columns. Setting role as img so screen readers don't skip them.-->
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-laughing pecs-icon"
+              role="img"
+              aria-label="I feel excited"
+            ></i>
+            <p><i class="bi bi-volume-down vol-excited"></i> I feel excited</p>
+          </div>
+
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-smile pecs-icon"
+              role="img"
+              aria-label="I feel happy"
+            ></i>
+            <p><i class="bi bi-volume-down vol-happy"> </i>I feel happy</p>
+          </div>
+
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-neutral pecs-icon"
+              role="img"
+              aria-label="I feel bored"
+            ></i>
+            <p><i class="bi bi-volume-down vol-bored"> </i>I feel bored</p>
+          </div>
+
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-frown pecs-icon"
+              role="img"
+              aria-label="I feel sad"
+            ></i>
+            <p><i class="bi bi-volume-down vol-sad"> </i>I feel sad</p>
+          </div>
+
+          <div class="col-md text-center">
+            <i
+              class="bi bi-emoji-angry pecs-icon"
+              role="img"
+              aria-label="I feel angry"
+            ></i>
+            <p><i class="bi bi-volume-down vol-angry"> </i>I feel angry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="missing-word-section">
+      <div class="container-fluid">
+        <h1 class="text-center wordsearch-subheading">
+          Fill in the missing word! It could be a number of different things.
+        </h1>
+        <div class="row">
+        <div class="col-md-8 typing-col">
+          <h3 class="text-center wordsearch-subheading">Type in the remainder of the sentence.</h3>
+          <p>
+            My name is <input type="text" class="missing-word-input" /> and I am
+            <input type="number" class="missing-word-input" /> years old! My
+            favourite show to watch is called
+            <input type="text" class="missing-word-input" /> and I watch it
+            using my <input type="text" class="missing-word-input" />. My
+            favourite subject in school is
+            <input type="text" class="missing-word-input" /> because
+            <input type="text" class="missing-word-input" />.
+          </p>
+          <h3 class="wordsearch-subheading text-center">
+            Now try finding out what the right word is! Ask your teacher if you
+            get stuck.
+          </h3>
+          <p>
+            It is
+            <input
+              list="their-there"
+              class="missing-word-input"
+              name="multiple-choice"
+            />
+
+            <datalist id="their-there">
+              <option value="their"></option>
+              <option value="there"></option>
+              <option value="they're"></option>
+            </datalist>
+
+            football.             The supermarket is over
+            <input
+              list="their-there"
+              class="missing-word-input"
+              name="multiple-choice"
+            />
+
+            <datalist id="their-there">
+              <option value="their"></option>
+              <option value="there"></option>
+              <option value="they're"></option>
+            </datalist>.
+
+            Do you know if
+            <input
+              list="their-there"
+              class="missing-word-input"
+              name="multiple-choice"
+            />
+
+            <datalist id="their-there">
+              <option value="their"></option>
+              <option value="there"></option>
+              <option value="they're"></option>
+            </datalist> open right now?
+          </p>
+          My brother is younger
+          <input
+            list="than-then"
+            class="missing-word-input"
+            name="multiple-choice"
+          />
+
+          <datalist id="than-then">
+            <option value="than"></option>
+            <option value="then"></option>
+          </datalist>
+
+          me. I am older           <input
+          list="than-then"
+          class="missing-word-input"
+          name="multiple-choice"
+        />
+
+        <datalist id="than-then">
+          <option value="than"></option>
+          <option value="then"></option>
+        </datalist>
+my sister, though. Back           <input
+list="than-then"
+class="missing-word-input"
+name="multiple-choice"
+/>
+
+<datalist id="than-then">
+<option value="than"></option>
+<option value="then"></option>
+</datalist>
+I used to live in Dundee.
+          <p>
+
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 missing-word-img-col text-center">
+        <img src="icons\typing_image.png" class="img-fluid missing-word-image " alt="Responsive image of a cartoon man typing">
+      </div>
+      <div class="col-md  missing-word-img-col text-center ">
+        <img src="icons\typing_image2.jpg" class="img-fluid missing-word-image rotate-40 " alt="Responsive image of a woman typing">
+      </div>
+      </div>
+    </div>
+    </section>
+
+   
+
+    <nav class="navbar bottom navbar-light bg-light">
+      <a class="navbar-brand ms-auto" href="eighthpage.html"
+        >Click me to go to the next page</a
+      >
+    </nav>
+
+    <!-- Bootstrap Compiled JS, loaded near the bottom so all HTML elements it might change are loaded first. -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ChartJS CDN Scripts. Probably don't need to load these anywhere but results page. 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"
+      integrity="sha512-yadYcDSJyQExcKhjKSQOkBKy2BLDoW6WnnGXCAkCoRlpHGpYuVuBqGObf3g/TdB86sSbss1AOP4YlGSb6EKQPg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    -->
+
+    <!-- Bespoke JavaScript Scripts -->
+    <script src="Scripts\index.js"></script>
+  </body>
+</html>
